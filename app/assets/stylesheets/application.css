@@ -12,6 +12,7 @@
  *
  *= require font-awesome
  *= require bootstrap
+ *= require fullcalendar
  *= require mdb
  *= require style
  *= require_tree .

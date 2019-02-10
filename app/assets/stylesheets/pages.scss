@@ -6,7 +6,7 @@ html,
 body,
 header,
 .carousel {
-  height: 60vh;
+  height: 80vh;
 }
 
 @media (max-width: 740px) {
@@ -33,4 +33,8 @@ header,
   .navbar:not(.top-nav-collapse) {
     background: #929FBA !important;
   }
+}
+
+.icon {
+  opacity: 0.5;
 }
