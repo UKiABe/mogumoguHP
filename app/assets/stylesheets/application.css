@@ -15,6 +15,6 @@
  *= require fullcalendar
  *= require mdb
  *= require style
- *= require_tree .
+ *= require_directory .
  *= require_self
  */
