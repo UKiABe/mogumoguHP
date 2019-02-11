@@ -47,11 +47,13 @@ GEM
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
+    bcrypt (3.1.12)
     bindex (0.5.0)
     bootsnap (1.3.2)
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
+    cancancan (2.3.0)
     capybara (3.13.2)
       addressable
       mini_mime (>= 0.1.3)
@@ -73,7 +75,16 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.4)
+    content_disposition (1.0.0)
     crass (1.0.4)
+    devise (4.6.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 6.0)
+      responders
+      warden (~> 1.2.3)
+    down (4.8.0)
+      addressable (~> 2.5)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.10.0)
@@ -120,6 +131,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
+    orm_adapter (0.5.0)
     pg (0.20.0)
     public_suffix (3.0.3)
     puma (3.12.0)
@@ -154,7 +166,11 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rb-readline (0.5.5)
     regexp_parser (1.3.0)
+    responders (2.4.1)
+      actionpack (>= 4.2.0, < 6.0)
+      railties (>= 4.2.0, < 6.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
     sass (3.7.3)
@@ -171,6 +187,9 @@ GEM
     selenium-webdriver (3.141.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
+    shrine (2.15.0)
+      content_disposition (~> 1.0)
+      down (~> 4.1)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -187,6 +206,8 @@ GEM
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
+    trix (0.10.1)
+      rails
     turbolinks (5.2.0)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -194,6 +215,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.8)
+      rack (>= 2.0.6)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -211,9 +234,11 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
+  cancancan
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  devise
   font-awesome-rails
   fullcalendar-rails
   jbuilder (~> 2.5)
@@ -223,11 +248,14 @@ DEPENDENCIES
   pg (= 0.20.0)
   puma (~> 3.11)
   rails (~> 5.2.2)
+  rb-readline
   sass-rails (~> 5.0)
   selenium-webdriver
+  shrine
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.3.6)
+  trix
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)

@@ -5,6 +5,7 @@ ruby '2.5.1'
 
 gem 'rails', '~> 5.2.2'
 gem 'puma', '~> 3.11'
+gem 'rb-readline'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -15,6 +16,10 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'momentjs-rails'
 gem 'fullcalendar-rails'
+gem 'cancancan'
+gem 'devise'
+gem 'trix'
+gem 'shrine'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
