@@ -1506,11 +1506,12 @@ button.bg-light:focus {
 
 @font-face {
   font-family: "bokurano";
-  src: url("/assets/Boku2-Bold.otf");
-  font-weight: 200; }
+  src: url("/assets/Boku2-Bold.otf") format('opentype');
+}
 
 body {
-  font-family: "bokurano", sans-serif;
+  font-family: "bokurano", "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴ ProNW3", 
+  "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "MS Pゴシック", 'MS PGothic', sans-serif;
   font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
