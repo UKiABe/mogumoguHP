@@ -1506,7 +1506,7 @@ button.bg-light:focus {
 
 @font-face {
   font-family: "bokurano";
-  src: url("/assets/Boku2-Bold.otf") format('opentype');
+  src: url("/assets/Boku2-Bold.otf");
 }
 
 body {
