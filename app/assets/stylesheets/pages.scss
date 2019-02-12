@@ -9,6 +9,11 @@ header,
   height: 80vh;
 }
 
+@font-face {
+   font-family: Boku2;
+   src: font-url('Boku2-Bold.otf') format('truetype');
+}
+
 @media (max-width: 740px) {
 
   html,

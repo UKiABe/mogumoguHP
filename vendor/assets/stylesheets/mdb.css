@@ -1504,13 +1504,8 @@ button.bg-light:focus {
   -ms-flex: 1;
   flex: 1; }
 
-@font-face {
-  font-family: "bokurano";
-  src: url("/assets/Boku2-Bold.otf");
-}
-
 body {
-  font-family: "bokurano", "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴ ProNW3", 
+  font-family: "Boku2", "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴ ProNW3", 
   "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "MS Pゴシック", 'MS PGothic', sans-serif;
   font-weight: 300; }
 
